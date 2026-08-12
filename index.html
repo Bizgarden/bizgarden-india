@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bizgarden® India | Corporate Legal and Business Solutions</title>
+
+  <meta name="description"
+        content="Bizgarden® India provides corporate legal and business solutions including company incorporation, corporate legal services, accounting, tax, trademark and cross-border business expansion between India and the GCC.">
+
+  <meta name="keywords"
+        content="company registration Kerala, company registration India, LLP registration, trademark registration, corporate legal services, accounting and tax services, business consultancy Kerala, GCC business expansion, Bahrain company formation, UAE company formation, Saudi Arabia business setup">
+
+  <meta name="author" content="Bizgarden®">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://bizgarden.in/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bizgarden® India | Corporate Legal and Business Solutions">
+  <meta property="og:description"
+        content="Grow Beyond Borders with Bizgarden®. Corporate legal and business solutions for businesses in India and the GCC.">
+  <meta property="og:url" content="https://bizgarden.in/">
+  <meta property="og:site_name" content="Bizgarden® India">
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#0b3a68">
+
+  <style>
+
+    /* ================================
+       GLOBAL
+    ================================= */
+
+    :root {
+      --primary: #0b3a68;
+      --primary-dark: #072b4d;
+      --secondary: #1c75bc;
+      --accent: #d9a441;
+      --light-blue: #eef6fc;
+      --lighter-blue: #f7fbff;
+      --text: #17212b;
+      --muted: #5f6b76;
+      --white: #ffffff;
+      --border: #dce6ee;
+      --shadow: 0 12px 35px rgba(11, 58, 104, 0.10);
+      --radius: 14px;
+      --max-width: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.15;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      transition: 0.25s ease;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,0.65);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    /* ================================
+       HEADER
+    ================================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--primary);
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      border: 2px solid var(--primary);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      background: var(--lighter-blue);
+    }
+
+    .logo small {
+      display: block;
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-top: -4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    .nav-links a {
+      color: #263746;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--secondary);
+    }
+
+    .nav-cta {
+      background: var(--primary);
+      color: white !important;
+      padding: 11px 18px;
+      border-radius: 7px;
+    }
+
+    .menu-btn {
+      display: none;
+      background: transparent;
+      border: 0;
+      font-size: 28px;
+      cursor: pointer;
+      color: var(--primary);
+    }
+
+    /* ================================
+       HERO
+    ================================= */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(28,117,188,0.18), transparent 32%),
+        linear-gradient(135deg, #072b4d 0%, #0b3a68 55%, #125d91 100%);
+      color: white;
+      padding: 105px 0 95px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 480px;
+      height: 480px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.10);
+      right: -180px;
+      top: -170px;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      padding: 8px 14px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 30px;
+      background: rgba(255,255,255,0.08);
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 70px);
+      line-height: 1.04;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: #dcefff;
+    }
+
+    .hero-text {
+      max-width: 650px;
+      color: rgba(255,255,255,0.82);
+      font-size: 19px;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 35px;
+    }
+
+    .hero-regions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: rgba(255,255,255,0.85);
+      font-size: 14px;
+    }
+
+    .hero-regions span {
+      padding: 6px 11px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.17);
+      border-radius: 20px;
+      padding: 30px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    }
+
+    .hero-card h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .hero-card-item {
+      display: flex;
+      gap: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .hero-card-item:last-child {
+      border-bottom: 0;
+    }
+
+    .hero-icon {
+      min-width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,0.12);
+      font-size: 19px;
+    }
+
+    .hero-card-item strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .hero-card-item p {
+      color: rgba(255,255,255,0.68);
+      font-size: 13px;
+    }
+
+    /* ================================
+       TRUST STRIP
+    ================================= */
+
+    .trust-strip {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 26px 0;
+    }
+
+    .trust-item {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .trust-item strong {
+      display: block;
+      color: var(--primary);
+      font-size: 16px;
+    }
+
+    .trust-item span {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* ================================
+       SERVICES
+    ================================= */
+
+    .services {
+      background: var(--lighter-blue);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 5px 18px rgba(11,58,104,0.04);
+      transition: 0.25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+      border-color: #c7dce9;
+    }
+
+    .service-icon {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: var(--light-blue);
+      color: var(--primary);
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      color: var(--primary);
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .service-link {
+      color: var(--secondary);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    /* ================================
+       ABOUT
+    ================================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .about-visual {
+      min-height: 450px;
+      border-radius: 24px;
+      background:
+        linear-gradient(145deg, rgba(11,58,104,0.92), rgba(28,117,188,0.82)),
+        #0b3a68;
+      padding: 45px;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-visual::before,
+    .about-visual::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 50%;
+    }
+
+    .about-visual::before {
+      width: 340px;
+      height: 340px;
+      right: -180px;
+      top: -100px;
+    }
+
+    .about-visual::after {
+      width: 220px;
+      height: 220px;
+      left: -110px;
+      bottom: -80px;
+    }
+
+    .about-visual-content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .about-visual h3 {
+      font-size: 36px;
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .about-visual p {
+      color: rgba(255,255,255,0.76);
+      max-width: 420px;
+    }
+
+    .about-content .eyebrow {
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .about-content h2 {
+      color: var(--primary);
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.12;
+      margin-bottom: 20px;
+    }
+
+    .about-content > p {
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 18px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 25px 0 30px;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 12px;
+      color: #304252;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--secondary);
+      font-weight: 800;
+    }
+
+    /* ================================
+       EXPANSION
+    ================================= */
+
+    .expansion {
+      background: var(--lighter-blue);
+    }
+
+    .expansion-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .expansion-card {
+      border-radius: 18px;
+      padding: 36px;
+      background: white;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .expansion-card h3 {
+      color: var(--primary);
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .expansion-card p {
+      color: var(--muted);
+      margin-bottom: 22px;
+    }
+
+    .route {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .country {
+      padding: 7px 12px;
+      border-radius: 7px;
+      background: var(--light-blue);
+    }
+
+    .arrow {
+      color: var(--secondary);
+    }
+
+    .country-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .country-list span {
+      font-size: 13px;
+      padding: 6px 10px;
+      background: #f4f7fa;
+      border-radius: 20px;
+      color: #455463;
+    }
+
+    /* ================================
+       WHY BIZGARDEN
+    ================================= */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .why-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: white;
+    }
+
+    .why-card span {
+      display: inline-grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      background: var(--light-blue);
+      border-radius: 10px;
+      margin-bottom: 17px;
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    .why-card h3 {
+      color: var(--primary);
+      margin-bottom: 8px;
+      font-size: 19px;
+    }
+
+    .why-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ================================
+       CTA
+    ================================= */
+
+    .cta {
+      padding: 85px 0;
+      background: linear-gradient(135deg, #072b4d, #0b3a68);
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: clamp(34px, 5vw, 50px);
+      line-height: 1.1;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 680px;
+      margin: 0 auto 28px;
+      color: rgba(255,255,255,0.75);
+      font-size: 17px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    /* ================================
+       CONTACT
+    ================================= */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 45px;
+    }
+
+    .contact-info h2 {
+      color: var(--primary);
+      font-size: 36px;
+      line-height: 1.15;
+      margin-bottom: 15px;
+    }
+
+    .contact-info > p {
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 9px;
+      background: var(--light-blue);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--primary);
+    }
+
+    .contact-item span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact-box {
+      background: var(--lighter-blue);
+      border: 1px solid var(--border);
+      padding: 30px;
+      border-radius: 16px;
+    }
+
+    .contact-box h3 {
+      color: var(--primary);
+      margin-bottom: 18px;
+    }
+
+    .contact-box p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    /* ================================
+       FOOTER
+    ================================= */
+
+    footer {
+      background: #061f37;
+      color: white;
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 35px;
+      padding-bottom: 40px;
+    }
+
+    .footer-brand .logo {
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .footer-brand p {
+      color: rgba(255,255,255,0.62);
+      max-width: 330px;
+      font-size: 14px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .footer-column a {
+      display: block;
+      color: rgba(255,255,255,0.62);
+      font-size: 14px;
+      margin-bottom: 9px;
+      transition: 0.2s;
+    }
+
+    .footer-column a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: rgba(255,255,255,0.5);
+      font-size: 12px;
+    }
+
+    /* ================================
+       WHATSAPP BUTTON
+    ================================= */
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 999;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 27px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.05);
+    }
+
+    /* ================================
+       RESPONSIVE
+    ================================= */
+
+    @media (max-width: 1000px) {
+
+      .nav-links {
+        gap: 16px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        max-width: 600px;
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+
+      .section {
+        padding: 65px 0;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background: white;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 10px;
+      }
+
+      .nav-cta {
+        text-align: center;
+      }
+
+      .hero {
+        padding: 75px 0 70px;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+
+      .hero-text {
+        font-size: 17px;
+      }
+
+      .service-grid,
+      .why-grid,
+      .expansion-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-visual {
+        min-height: 330px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .logo {
+        font-size: 21px;
+      }
+
+      .logo-mark {
+        width: 35px;
+        height: 35px;
+        font-size: 17px;
+      }
+
+      .hero-buttons,
+      .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        padding: 22px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ================================
+       HEADER
+  ================================= -->
+
+  <header>
+    <div class="container navbar">
+
+      <a href="#home" class="logo">
+        <span class="logo-mark">🌱</span>
+        <span>
+          Bizgarden<sup>®</sup>
+          <small>INDIA</small>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">
+        ☰
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#expansion">GCC Expansion</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-cta">Talk to Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ================================
+         HERO
+    ================================= -->
+
+    <section class="hero" id="home">
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="hero-badge">
+            🇮🇳 India · 🇧🇭 Bahrain · 🇦🇪 UAE · 🇸🇦 Saudi Arabia
+          </div>
+
+          <h1>
+            Grow Your Business
+            <span>Beyond Borders.</span>
+          </h1>
+
+          <p class="hero-text">
+            Corporate Legal and Business Solutions for entrepreneurs,
+            companies and businesses looking to establish, structure,
+            operate and expand across India and the GCC.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#services" class="btn btn-primary">
+              Explore Our Services
+            </a>
+
+            <a href="#expansion" class="btn btn-outline">
+              Expand to the GCC
+            </a>
+
+          </div>
+
+          <div class="hero-regions">
+            <span>India</span>
+            <span>Bahrain</span>
+            <span>UAE</span>
+            <span>Saudi Arabia</span>
+            <span>Cross-Border Advisory</span>
+          </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+          <h3>How Bizgarden Can Help</h3>
+
+          <div class="hero-card-item">
+
+            <div class="hero-icon">🏢</div>
+
+            <div>
+              <strong>Start Your Business</strong>
+              <p>Company formation and business setup solutions.</p>
+            </div>
+
+          </div>
+
+          <div class="hero-card-item">
+
+            <div class="hero-icon">⚖️</div>
+
+            <div>
+              <strong>Protect Your Business</strong>
+              <p>Corporate legal, compliance and intellectual property support.</p>
+            </div>
+
+          </div>
+
+          <div class="hero-card-item">
+
+            <div class="hero-icon">📊</div>
+
+            <div>
+              <strong>Manage Your Business</strong>
+              <p>Accounting, taxation and ongoing business support.</p>
+            </div>
+
+          </div>
+
+          <div class="hero-card-item">
+
+            <div class="hero-icon">🌍</div>
+
+            <div>
+              <strong>Expand Beyond Borders</strong>
+              <p>India-GCC cross-border expansion and market-entry support.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         TRUST STRIP
+    ================================= -->
+
+    <section class="trust-strip">
+
+      <div class="container trust-grid">
+
+        <div class="trust-item">
+          <strong>India + GCC</strong>
+          <span>Cross-border perspective</span>
+        </div>
+
+        <div class="trust-item">
+          <strong>Corporate + Legal</strong>
+          <span>Business-focused solutions</span>
+        </div>
+
+        <div class="trust-item">
+          <strong>End-to-End Support</strong>
+          <span>From setup to growth</span>
+        </div>
+
+        <div class="trust-item">
+          <strong>Grow Beyond Borders</strong>
+          <span>Your business, our support</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         SERVICES
+    ================================= -->
+
+    <section class="section services" id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">Our Solutions</div>
+
+          <h2>
+            Everything Your Business Needs to Grow
+          </h2>
+
+          <p>
+            Practical corporate, legal and business solutions designed
+            for businesses at every stage of their journey.
+          </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+          <article class="service-card">
+
+            <div class="service-icon">🏢</div>
+
+            <h3>Company Incorporation</h3>
+
+            <p>
+              Establish your business with the right legal structure
+              and registration support.
+            </p>
+
+            <a href="#contact" class="service-link">
+              Learn More →
+            </a>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">⚖️</div>
+
+            <h3>Corporate Legal</h3>
+
+            <p>
+              Corporate legal advisory, documentation, agreements
+              and business compliance support.
+            </p>
+
+            <a href="#contact" class="service-link">
+              Learn More →
+            </a>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">📊</div>
+
+            <h3>Accounting & Tax</h3>
+
+            <p>
+              Accounting, taxation, reporting and ongoing compliance
+              support for businesses.
+            </p>
+
+            <a href="#contact" class="service-link">
+              Learn More →
+            </a>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">™</div>
+
+            <h3>Trademark & IP</h3>
+
+            <p>
+              Protect your brand and intellectual property with
+              professional trademark support.
+            </p>
+
+            <a href="#contact" class="service-link">
+              Learn More →
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         ABOUT
+    ================================= -->
+
+    <section class="section" id="about">
+
+      <div class="container about-grid">
+
+        <div class="about-visual">
+
+          <div class="about-visual-content">
+
+            <h3>
+              From Starting a Business
+              to Expanding Beyond Borders.
+            </h3>
+
+            <p>
+              Bizgarden® brings corporate, legal and business
+              solutions together to help businesses build stronger
+              foundations and explore new markets.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+          <div class="eyebrow">
+            About Bizgarden
+          </div>
+
+          <h2>
+            One Business Partner.
+            Multiple Possibilities.
+          </h2>
+
+          <p>
+            Bizgarden® is a Corporate Legal and Business Solutions
+            provider supporting entrepreneurs and businesses with
+            practical solutions across the business lifecycle.
+          </p>
+
+          <p>
+            With a growing presence connecting India and the GCC,
+            our objective is to make business establishment,
+            compliance and cross-border expansion simpler and more
+            accessible.
+          </p>
+
+
+          <ul class="check-list">
+
+            <li>Business formation and corporate structuring</li>
+
+            <li>Corporate legal and compliance support</li>
+
+            <li>Accounting and tax solutions</li>
+
+            <li>Trademark and intellectual property support</li>
+
+            <li>India-GCC cross-border expansion</li>
+
+          </ul>
+
+
+          <a href="#contact" class="btn btn-primary">
+            Speak With Bizgarden
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         CROSS BORDER EXPANSION
+    ================================= -->
+
+    <section class="section expansion" id="expansion">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Cross-Border Expansion
+          </div>
+
+          <h2>
+            Take Your Business Beyond Borders
+          </h2>
+
+          <p>
+            Whether you are an Indian business looking toward the
+            GCC or a GCC business exploring India, Bizgarden® can
+            help you navigate the journey.
+          </p>
+
+        </div>
+
+
+        <div class="expansion-grid">
+
+          <article class="expansion-card">
+
+            <h3>
+              India → GCC
+            </h3>
+
+            <p>
+              Explore opportunities to establish and expand your
+              Indian business in GCC markets.
+            </p>
+
+            <div class="route">
+
+              <span class="country">🇮🇳 India</span>
+
+              <span class="arrow">→</span>
+
+              <span class="country">🇧🇭 Bahrain</span>
+
+              <span class="arrow">→</span>
+
+              <span class="country">🇦🇪 UAE</span>
+
+              <span class="arrow">→</span>
+
+              <span class="country">🇸🇦 Saudi Arabia</span>
+
+            </div>
+
+            <div class="country-list">
+              <span>Company Formation</span>
+              <span>Licensing</span>
+              <span>Market Entry</span>
+              <span>Trademark</span>
+              <span>Compliance</span>
+            </div>
+
+          </article>
+
+
+          <article class="expansion-card">
+
+            <h3>
+              GCC → India
+            </h3>
+
+            <p>
+              Support for businesses and investors from the GCC
+              looking to establish or expand operations in India.
+            </p>
+
+            <div class="route">
+
+              <span class="country">🇧🇭 Bahrain</span>
+
+              <span class="arrow">→</span>
+
+              <span class="country">🇦🇪 UAE</span>
+
+              <span class="arrow">→</span>
+
+              <span class="country">🇸🇦 Saudi Arabia</span>
+
+              <span class="arrow">→</span>
+
+              <span class="country">🇮🇳 India</span>
+
+            </div>
+
+            <div class="country-list">
+              <span>Business Setup</span>
+              <span>Corporate Structuring</span>
+              <span>Legal Support</span>
+              <span>Accounting</span>
+              <span>Tax</span>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         WHY BIZGARDEN
+    ================================= -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Why Bizgarden
+          </div>
+
+          <h2>
+            Built for Businesses With Bigger Ambitions
+          </h2>
+
+          <p>
+            We combine corporate, legal and business perspectives
+            to help you make better decisions as your business grows.
+          </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+          <article class="why-card">
+
+            <span>01</span>
+
+            <h3>
+              India + GCC Perspective
+            </h3>
+
+            <p>
+              A cross-border approach designed for businesses
+              operating between India and the GCC.
+            </p>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <span>02</span>
+
+            <h3>
+              Corporate & Legal Focus
+            </h3>
+
+            <p>
+              Business solutions supported by corporate and legal
+              thinking rather than isolated services.
+            </p>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <span>03</span>
+
+            <h3>
+              Long-Term Support
+            </h3>
+
+            <p>
+              We aim to support businesses beyond incorporation,
+              through compliance, operations and expansion.
+            </p>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <span>04</span>
+
+            <h3>
+              Practical Solutions
+            </h3>
+
+            <p>
+              Clear and practical guidance designed around the
+              actual needs of entrepreneurs and companies.
+            </p>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <span>05</span>
+
+            <h3>
+              One Connected Ecosystem
+            </h3>
+
+            <p>
+              Corporate, legal, accounting and expansion services
+              brought together under one business partner.
+            </p>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <span>06</span>
+
+            <h3>
+              Grow Beyond Borders
+            </h3>
+
+            <p>
+              Our vision is to help businesses move confidently
+              from local opportunities to international markets.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         CTA
+    ================================= -->
+
+    <section class="cta">
+
+      <div class="container">
+
+        <h2>
+          Ready to Grow Beyond Borders?
+        </h2>
+
+        <p>
+          Tell us what you are planning. Whether you are starting
+          a business in India or exploring expansion into the GCC,
+          Bizgarden® can help you identify the next step.
+        </p>
+
+        <div class="cta-buttons">
+
+          <a href="#contact" class="btn btn-primary">
+            Request a Consultation
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            Contact Bizgarden
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         CONTACT
+    ================================= -->
+
+    <section class="section" id="contact">
+
+      <div class="container contact-grid">
+
+        <div class="contact-info">
+
+          <h2>
+            Let's Talk About Your Business
+          </h2>
+
+          <p>
+            Have a business idea, a new company to establish,
+            or plans to expand beyond India? Get in touch with
+            Bizgarden® India.
+          </p>
+
+
+          <div class="contact-item">
+
+            <div class="contact-icon">✉</div>
+
+            <div>
+              <strong>Email</strong>
+              <span>india@bizgarden.in</span>
+            </div>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <div class="contact-icon">🌍</div>
+
+            <div>
+              <strong>Business Coverage</strong>
+              <span>India & GCC Markets</span>
+            </div>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <div class="contact-icon">💬</div>
+
+            <div>
+              <strong>WhatsApp</strong>
+              <span>Connect with our team</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-box">
+
+          <h3>
+            Start a Conversation
+          </h3>
+
+          <p>
+            Tell us briefly what you need help with and our team
+            can guide you toward the appropriate solution.
+          </p>
+
+          <a href="mailto:india@bizgarden.in"
+             class="btn btn-primary">
+            Email Bizgarden India
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================================
+       FOOTER
+  ================================= -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+
+          <a href="#home" class="logo">
+            <span class="logo-mark">🌱</span>
+            <span>
+              Bizgarden<sup>®</sup>
+              <small>INDIA</small>
+            </span>
+          </a>
+
+          <p>
+            Corporate Legal and Business Solutions helping
+            businesses grow beyond borders.
+          </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>Services</h4>
+
+          <a href="#services">Company Incorporation</a>
+          <a href="#services">Corporate Legal</a>
+          <a href="#services">Accounting & Tax</a>
+          <a href="#services">Trademark & IP</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>Expansion</h4>
+
+          <a href="#expansion">India → Bahrain</a>
+          <a href="#expansion">India → UAE</a>
+          <a href="#expansion">India → Saudi Arabia</a>
+          <a href="#expansion">GCC → India</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>Company</h4>
+
+          <a href="#about">About Bizgarden</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact">Consultation</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 Bizgarden® India. All rights reserved.
+        </span>
+
+        <span>
+          Corporate Legal and Business Solutions · Grow Beyond Borders
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================================
+       WHATSAPP
+  ================================= -->
+
+  <!--
+    IMPORTANT:
+    Replace YOURWHATSAPPNUMBER with your actual India WhatsApp number.
+    Use international format without +, spaces or dashes.
+    Example: 919876543210
+  -->
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/YOURWHATSAPPNUMBER?text=Hello%20Bizgarden%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact Bizgarden on WhatsApp"
+    title="Chat with Bizgarden on WhatsApp">
+    💬
+  </a>
+
+
+  <!-- ================================
+       JAVASCRIPT
+  ================================= -->
+
+  <script>
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+      link.addEventListener("click", function() {
+        navLinks.classList.remove("active");
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
