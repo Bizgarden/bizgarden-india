@@ -947,4 +947,401 @@ footer {
     }
 
 }  
-/* responsive layout */
+/* responsive layout */    /* =========================================================
+   BIZGARDEN — PREMIUM INTERNATIONAL HERO
+   ========================================================= */
+
+.premium-hero {
+    position: relative;
+    min-height: 760px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 88% 50%, rgba(31, 104, 194, 0.55) 0%, rgba(31, 104, 194, 0.18) 24%, transparent 48%),
+        linear-gradient(115deg, #071f42 0%, #0b3f82 52%, #1768c5 100%);
+    color: #ffffff;
+}
+
+.premium-hero .hero-grid {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(380px, 0.92fr);
+    align-items: center;
+    gap: 70px;
+    min-height: 760px;
+}
+
+/* Decorative background orbit */
+
+.premium-hero .hero-orbit {
+    position: absolute;
+    width: 560px;
+    height: 560px;
+    right: -170px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.premium-hero .hero-orbit::before,
+.premium-hero .hero-orbit::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255,255,255,0.13);
+    border-radius: 50%;
+}
+
+.premium-hero .hero-orbit::before {
+    width: 390px;
+    height: 390px;
+    left: 85px;
+    top: 85px;
+}
+
+.premium-hero .hero-orbit::after {
+    width: 220px;
+    height: 220px;
+    left: 170px;
+    top: 170px;
+}
+
+.premium-hero .hero-orbit-two {
+    width: 800px;
+    height: 800px;
+    right: -290px;
+    opacity: 0.45;
+}
+
+/* Hero content */
+
+.premium-hero .hero-content {
+    max-width: 720px;
+}
+
+.premium-hero .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 17px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(255,255,255,0.28);
+    border-radius: 999px;
+    background: rgba(255,255,255,0.07);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+}
+
+.premium-hero .eyebrow span {
+    color: #f5b800;
+}
+
+.premium-hero h1 {
+    max-width: 760px;
+    margin: 0 0 28px;
+    color: #ffffff;
+    font-size: clamp(58px, 6vw, 92px);
+    line-height: 0.96;
+    letter-spacing: -4px;
+    font-weight: 800;
+}
+
+.premium-hero h1 em {
+    display: block;
+    color: #f5b800;
+    font-style: normal;
+}
+
+.premium-hero .hero-lead {
+    max-width: 650px;
+    margin: 0 0 34px;
+    color: rgba(255,255,255,0.78);
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+/* Buttons */
+
+.premium-hero .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.premium-hero .hero-actions .btn {
+    min-height: 56px;
+    padding: 0 25px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.25s ease,
+                background 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.premium-hero .hero-actions .btn:hover {
+    transform: translateY(-2px);
+}
+
+.premium-hero .hero-actions .btn-gold {
+    background: #f5b800;
+    color: #071f42;
+    border: 1px solid #f5b800;
+}
+
+.premium-hero .hero-actions .btn-gold:hover {
+    background: #ffca22;
+}
+
+.premium-hero .hero-actions .btn-light {
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.45);
+}
+
+.premium-hero .hero-actions .btn-light:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.7);
+}
+
+/* Right-side premium panel */
+
+.premium-hero .hero-panel {
+    position: relative;
+    padding: 42px;
+    border: 1px solid rgba(255,255,255,0.23);
+    border-radius: 24px;
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.15),
+        rgba(255,255,255,0.055)
+    );
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.20),
+        inset 0 1px 0 rgba(255,255,255,0.10);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.premium-hero .panel-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    background: #f5b800;
+    color: #071f42;
+    font-size: 25px;
+    font-weight: 800;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.premium-hero .hero-panel h2 {
+    margin: 0 0 17px;
+    color: #ffffff;
+    font-size: clamp(30px, 3vw, 42px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+}
+
+.premium-hero .hero-panel p {
+    margin: 0 0 28px;
+    color: rgba(255,255,255,0.72);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.premium-hero .hero-services {
+    display: grid;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.premium-hero .hero-services li {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.premium-hero .hero-services li::before {
+    content: "✓";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #f5b800;
+    color: #071f42;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+/* Small premium detail beneath panel */
+
+.premium-hero .hero-panel-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255,255,255,0.14);
+    color: rgba(255,255,255,0.62);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.premium-hero .hero-panel-note strong {
+    color: #f5b800;
+}
+
+/* Subtle light effect */
+
+.premium-hero::after {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    left: -260px;
+    bottom: -280px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.055);
+    filter: blur(4px);
+    z-index: 1;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 980px) {
+
+    .premium-hero {
+        min-height: auto;
+    }
+
+    .premium-hero .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        min-height: auto;
+    }
+
+    .premium-hero .hero-content {
+        max-width: 800px;
+    }
+
+    .premium-hero h1 {
+        font-size: clamp(54px, 9vw, 76px);
+    }
+
+    .premium-hero .hero-panel {
+        max-width: 650px;
+    }
+
+    .premium-hero .hero-orbit {
+        right: -300px;
+        top: 45%;
+    }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .premium-hero .hero-grid {
+        gap: 38px;
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .premium-hero .eyebrow {
+        margin-bottom: 22px;
+        padding: 8px 13px;
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    }
+
+    .premium-hero h1 {
+        margin-bottom: 22px;
+        font-size: clamp(46px, 15vw, 66px);
+        line-height: 0.98;
+        letter-spacing: -2.5px;
+    }
+
+    .premium-hero .hero-lead {
+        margin-bottom: 27px;
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .premium-hero .hero-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .premium-hero .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .premium-hero .hero-panel {
+        padding: 30px 25px;
+        border-radius: 18px;
+    }
+
+    .premium-hero .panel-mark {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 23px;
+        border-radius: 12px;
+    }
+
+    .premium-hero .hero-panel h2 {
+        font-size: 29px;
+    }
+
+    .premium-hero .hero-panel p {
+        font-size: 14px;
+    }
+
+    .premium-hero .hero-services {
+        gap: 13px;
+    }
+
+    .premium-hero .hero-services li {
+        font-size: 14px;
+    }
+
+    .premium-hero .hero-orbit {
+        width: 380px;
+        height: 380px;
+        right: -245px;
+        top: 31%;
+        opacity: 0.65;
+    }
+
+    .premium-hero .hero-orbit-two {
+        display: none;
+    }
+}
