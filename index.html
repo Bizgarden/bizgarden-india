@@ -338,7 +338,128 @@
 
   .premium-about .about-values > div:last-child {
     border-bottom: 0;
+  }/* =========================================
+   BIZGARDEN PREMIUM HOW WE WORK
+   ========================================= */
+
+.premium-process {
+  background: #ffffff;
+}
+
+.premium-process .process-intro {
+  max-width: 850px;
+  margin-bottom: 55px;
+}
+
+.premium-process .process-intro .section-kicker {
+  margin-bottom: 18px;
+}
+
+.premium-process .process-intro h2 {
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: #071f42;
+  margin-bottom: 20px;
+}
+
+.premium-process .process-intro h2 span {
+  display: block;
+  color: #f4b400;
+}
+
+.premium-process .process-intro p {
+  max-width: 720px;
+  color: #61708a;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.premium-process .process-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  position: relative;
+}
+
+.premium-process .process-step {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #dce5f0;
+  border-top: 3px solid #f4b400;
+  border-radius: 18px;
+  padding: 30px 27px 32px;
+  min-height: 245px;
+  box-shadow: 0 12px 35px rgba(7, 31, 66, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.premium-process .process-step:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 45px rgba(7, 31, 66, 0.11);
+  border-color: #c8d7e8;
+}
+
+.premium-process .process-step-number {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #edf4fb;
+  color: #0b4ea2;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 28px;
+}
+
+.premium-process .process-step-content h3 {
+  color: #071f42;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.premium-process .process-step-content p {
+  color: #61708a;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Tablet */
+@media (max-width: 980px) {
+  .premium-process .process-flow {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .premium-process {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .premium-process .process-intro {
+    margin-bottom: 40px;
+  }
+
+  .premium-process .process-intro h2 {
+    font-size: 42px;
+    letter-spacing: -1.5px;
+  }
+
+  .premium-process .process-flow {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .premium-process .process-step {
+    min-height: auto;
+    padding: 25px;
+  }
+}
 } </style>
 </head>
 
