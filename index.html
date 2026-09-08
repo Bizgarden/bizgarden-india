@@ -124,7 +124,222 @@
       .corridor{padding:32px 24px}
       .actions .btn{width:100%}
     }
-  </style>
+ /* BIZGARDEN ABOUT SECTION */
+
+.premium-about {
+  background: linear-gradient(180deg, #f5f8fc 0%, #ffffff 100%);
+}
+
+.premium-about .about-intro {
+  max-width: 900px;
+  margin-bottom: 60px;
+}
+
+.premium-about .about-intro h2 {
+  margin-bottom: 22px;
+}
+
+.premium-about .about-intro h2 span {
+  display: block;
+  color: #f4b400;
+}
+
+.premium-about .about-intro > p {
+  max-width: 820px;
+  color: #61708a;
+  font-size: 1.05rem;
+}
+
+.premium-about .about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.premium-about .about-main {
+  max-width: 700px;
+}
+
+.premium-about .about-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: #0b4ea2;
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: 1.6px;
+}
+
+.premium-about .about-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #f4b400;
+  box-shadow: 0 0 0 6px rgba(244,180,0,.12);
+}
+
+.premium-about .about-main h3 {
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  line-height: 1.12;
+  letter-spacing: -1px;
+  margin-bottom: 22px;
+}
+
+.premium-about .about-main p {
+  color: #61708a;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+.premium-about .about-main .btn {
+  margin-top: 12px;
+}
+
+.premium-about .about-side {
+  display: grid;
+  gap: 15px;
+}
+
+.premium-about .about-card {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 18px;
+  padding: 23px;
+  background: #ffffff;
+  border: 1px solid #dfe7f1;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(10,40,80,.05);
+  transition: .25s ease;
+}
+
+.premium-about .about-card:hover {
+  transform: translateY(-4px);
+  border-color: #bfd2ea;
+  box-shadow: 0 18px 40px rgba(10,40,80,.10);
+}
+
+.premium-about .about-card-number {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #eaf2fb;
+  color: #0b4ea2;
+  font-size: .85rem;
+  font-weight: 900;
+}
+
+.premium-about .about-card h4 {
+  margin: 2px 0 7px;
+  color: #10233f;
+  font-size: 1.15rem;
+}
+
+.premium-about .about-card p {
+  margin: 0;
+  color: #61708a;
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+.premium-about .about-values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 65px;
+  padding-top: 28px;
+  border-top: 1px solid #dfe7f1;
+}
+
+.premium-about .about-values > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 20px;
+  border-right: 1px solid #dfe7f1;
+}
+
+.premium-about .about-values > div:first-child {
+  padding-left: 0;
+}
+
+.premium-about .about-values > div:last-child {
+  border-right: 0;
+}
+
+.premium-about .about-values strong {
+  color: #f4b400;
+  font-size: .8rem;
+  font-weight: 900;
+}
+
+.premium-about .about-values span {
+  color: #10233f;
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+@media(max-width:900px) {
+  .premium-about .about-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .premium-about .about-side {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .premium-about .about-card {
+    grid-template-columns: 1fr;
+  }
+
+  .premium-about .about-values {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+  }
+
+  .premium-about .about-values > div:nth-child(2) {
+    border-right: 0;
+  }
+}
+
+@media(max-width:600px) {
+  .premium-about .about-intro {
+    margin-bottom: 45px;
+  }
+
+  .premium-about .about-grid {
+    gap: 35px;
+  }
+
+  .premium-about .about-side {
+    grid-template-columns: 1fr;
+  }
+
+  .premium-about .about-card {
+    grid-template-columns: 54px 1fr;
+    padding: 20px;
+  }
+
+  .premium-about .about-values {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 50px;
+  }
+
+  .premium-about .about-values > div {
+    padding: 0 0 18px;
+    border-right: 0;
+    border-bottom: 1px solid #dfe7f1;
+  }
+
+  .premium-about .about-values > div:last-child {
+    border-bottom: 0;
+  }
+} </style>
 </head>
 
 <body>
