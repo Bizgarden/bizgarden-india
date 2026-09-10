@@ -1093,46 +1093,139 @@
 
 </section>
 
-<section id="contact" style="background:#f4b400; padding:95px 0;">
-  <div style="max-width:1180px; margin:0 auto; padding:0 20px;">
+<style>
+  .bg-contact-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
 
-    <div style="background:#071f42; border-radius:26px; padding:65px 70px; display:grid; grid-template-columns:1fr auto; gap:60px; align-items:center; box-sizing:border-box;">
+  .bg-contact-panel {
+    background: #071f42;
+    border-radius: 26px;
+    padding: 65px 70px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 60px;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
 
+  .bg-contact-actions {
+    min-width: 245px;
+  }
+
+  .bg-contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 17px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+
+    .bg-contact {
+      padding: 65px 0 !important;
+    }
+
+    .bg-contact-inner {
+      padding: 0 20px;
+    }
+
+    .bg-contact-panel {
+      grid-template-columns: 1fr;
+      gap: 35px;
+      padding: 45px 28px;
+      border-radius: 24px;
+    }
+
+    .bg-contact-title {
+      font-size: clamp(38px, 11vw, 50px) !important;
+      line-height: 1.08 !important;
+      letter-spacing: -1.8px !important;
+    }
+
+    .bg-contact-copy {
+      font-size: 16px !important;
+      line-height: 1.75 !important;
+    }
+
+    .bg-contact-actions {
+      min-width: 0;
+      width: 100%;
+    }
+
+    .bg-contact-button {
+      width: 100%;
+    }
+
+    .bg-contact-location {
+      text-align: center;
+    }
+  }
+</style>
+
+<section id="contact" class="bg-contact" style="background:#f4b400; padding:95px 0;">
+
+  <div class="bg-contact-inner">
+
+    <div class="bg-contact-panel">
+
+      <!-- LEFT CONTENT -->
       <div>
 
         <div style="color:#f4b400; font-size:13px; font-weight:800; letter-spacing:2px; text-transform:uppercase; margin-bottom:20px;">
           Let's Talk Business
         </div>
 
-        <h2 style="color:#ffffff; font-size:clamp(38px,5vw,58px); line-height:1.08; letter-spacing:-2px; margin:0 0 22px;">
+        <h2 class="bg-contact-title" style="color:#ffffff; font-size:clamp(38px,5vw,58px); line-height:1.08; letter-spacing:-2px; margin:0 0 22px;">
           Have a market to enter?
           <span style="display:block; color:#f4b400;">A business to build?</span>
         </h2>
 
-        <p style="color:#c7d3e4; font-size:17px; line-height:1.8; max-width:680px; margin:0;">
-          Tell us what you are planning. Whether you are establishing a business,
-          entering a new market or expanding across borders, we can help you
-          identify the right next step.
+        <p class="bg-contact-copy" style="color:#c7d3e4; font-size:17px; line-height:1.8; max-width:680px; margin:0;">
+          Tell us what you are planning. Whether you are establishing a business, entering a new market or expanding across borders, we can help you identify the right next step.
         </p>
 
       </div>
 
 
-      <div style="min-width:245px;">
+      <!-- RIGHT ACTIONS -->
+      <div class="bg-contact-actions">
 
-        <a href="mailto:info@bizgarden.in"
-           style="display:flex; align-items:center; justify-content:space-between; gap:20px; background:#f4b400; color:#071f42; text-decoration:none; font-size:14px; font-weight:800; padding:17px 20px; border-radius:10px; margin-bottom:12px; box-sizing:border-box;">
+        <a
+          href="mailto:info@bizgarden.in"
+          class="bg-contact-button"
+          style="background:#f4b400; color:#071f42; margin-bottom:12px;"
+        >
           <span>Email Bizgarden</span>
           <span style="font-size:18px;">↗</span>
         </a>
 
-        <a href="mailto:info@bizgarden.in?subject=Business%20Consultation"
-           style="display:flex; align-items:center; justify-content:space-between; gap:20px; background:transparent; color:#ffffff; text-decoration:none; font-size:14px; font-weight:800; padding:16px 20px; border:1px solid rgba(255,255,255,0.28); border-radius:10px; box-sizing:border-box;">
+
+        <a
+          href="mailto:info@bizgarden.in?subject=Business%20Consultation"
+          class="bg-contact-button"
+          style="background:transparent; color:#ffffff; border:1px solid rgba(255,255,255,0.28);"
+        >
           <span>Request a Consultation</span>
           <span style="font-size:18px;">↗</span>
         </a>
 
-        <div style="color:#91a4bf; font-size:12px; line-height:1.6; margin-top:20px; text-align:center;">
+
+        <div
+          class="bg-contact-location"
+          style="color:#91a4bf; font-size:12px; line-height:1.6; margin-top:20px; text-align:center;"
+        >
           India ↔ Bahrain ↔ GCC
         </div>
 
@@ -1141,6 +1234,7 @@
     </div>
 
   </div>
+
 </section>
 </main>
 
