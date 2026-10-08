@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Business Advisory &amp; Solutions | Bizgarden®</title>
+
+  <meta name="description" content="Business advisory and corporate solutions across India and the GCC. Bizgarden® helps businesses make informed decisions, improve operations and build practical foundations for sustainable growth.">
+
+  <link rel="canonical" href="https://bizgarden.in/services/business-advisory/">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #071f42;
+      background: #ffffff;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .ba-header {
+      background: #071f42;
+      padding: 22px 0;
+    }
+
+    .ba-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .ba-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .ba-logo {
+      color: #ffffff;
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .ba-logo span {
+      color: #f4b400;
+    }
+
+    .ba-nav-link {
+      color: #c7d3e4;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .ba-hero {
+      background:
+        radial-gradient(circle at 85% 25%, rgba(244,180,0,0.16), transparent 28%),
+        linear-gradient(135deg, #071f42 0%, #0b356b 100%);
+      padding: 95px 0 105px;
+      overflow: hidden;
+    }
+
+    .ba-hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .ba-kicker {
+      color: #f4b400;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .ba-hero h1 {
+      color: #ffffff;
+      font-size: clamp(42px, 5vw, 66px);
+      line-height: 1.05;
+      letter-spacing: -2.5px;
+      margin: 0 0 25px;
+    }
+
+    .ba-hero h1 span {
+      color: #f4b400;
+    }
+
+    .ba-hero-text {
+      color: #c7d3e4;
+      font-size: 17px;
+      line-height: 1.8;
+      max-width: 670px;
+      margin: 0 0 32px;
+    }
+
+    .ba-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .ba-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #f4b400;
+      color: #071f42;
+      padding: 15px 22px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .ba-btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid rgba(255,255,255,0.28);
+      color: #ffffff;
+      padding: 15px 22px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .ba-hero-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 24px;
+      padding: 34px;
+    }
+
+    .ba-card-label {
+      color: #91a4bf;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .ba-hero-card h3 {
+      color: #ffffff;
+      font-size: 27px;
+      line-height: 1.25;
+      margin: 0 0 22px;
+    }
+
+    .ba-check {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 0;
+      border-top: 1px solid rgba(255,255,255,0.10);
+    }
+
+    .ba-check:first-of-type {
+      border-top: 0;
+    }
+
+    .ba-check-icon {
+      color: #f4b400;
+      font-weight: 900;
+      font-size: 16px;
+    }
+
+    .ba-check span:last-child {
+      color: #c7d3e4;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .ba-intro {
+      padding: 100px 0 75px;
+      background: #ffffff;
+    }
+
+    .ba-intro-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .ba-section-kicker {
+      color: #0b4ea2;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .ba-intro h2 {
+      color: #071f42;
+      font-size: clamp(36px, 4vw, 52px);
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin: 0;
+    }
+
+    .ba-intro h2 span {
+      color: #0b4ea2;
+    }
+
+    .ba-intro-text p {
+      color: #56677f;
+      font-size: 16px;
+      line-height: 1.85;
+      margin: 0 0 18px;
+    }
+
+    .ba-services {
+      padding: 30px 0 100px;
+      background: #f6f8fb;
+    }
+
+    .ba-services-heading {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 50px;
+    }
+
+    .ba-services-heading h2 {
+      color: #071f42;
+      font-size: clamp(34px, 4vw, 48px);
+      letter-spacing: -1.5px;
+      margin: 0 0 15px;
+    }
+
+    .ba-services-heading p {
+      color: #65758c;
+      font-size: 16px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .ba-service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .ba-service-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 30px;
+      min-height: 245px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .ba-service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 35px rgba(7,31,66,0.09);
+    }
+
+    .ba-number {
+      color: #f4b400;
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 24px;
+    }
+
+    .ba-service-card h3 {
+      color: #071f42;
+      font-size: 19px;
+      margin: 0 0 13px;
+    }
+
+    .ba-service-card p {
+      color: #65758c;
+      font-size: 14px;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    .ba-dark {
+      background: #071f42;
+      padding: 105px 0;
+    }
+
+    .ba-dark-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 75px;
+      align-items: center;
+    }
+
+    .ba-dark h2 {
+      color: #ffffff;
+      font-size: clamp(36px, 4vw, 54px);
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin: 0;
+    }
+
+    .ba-dark h2 span {
+      color: #f4b400;
+    }
+
+    .ba-dark-text {
+      color: #c7d3e4;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-top: 22px;
+    }
+
+    .ba-principles {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .ba-principle {
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .ba-principle strong {
+      display: block;
+      color: #f4b400;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .ba-principle h3 {
+      color: #ffffff;
+      font-size: 18px;
+      margin: 0 0 9px;
+    }
+
+    .ba-principle p {
+      color: #91a4bf;
+      font-size: 13px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .ba-corridor {
+      padding: 100px 0;
+      background: #ffffff;
+    }
+
+    .ba-corridor-heading {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 45px;
+    }
+
+    .ba-corridor-heading h2 {
+      color: #071f42;
+      font-size: clamp(36px, 4vw, 50px);
+      letter-spacing: -2px;
+      margin: 0 0 16px;
+    }
+
+    .ba-corridor-heading h2 span {
+      color: #0b4ea2;
+    }
+
+    .ba-corridor-heading p {
+      color: #65758c;
+      font-size: 16px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .ba-markets {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 18px;
+      align-items: center;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .ba-market {
+      border: 1px solid #e0e6ee;
+      border-radius: 20px;
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    .ba-market-label {
+      color: #0b4ea2;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .ba-market h3 {
+      color: #071f42;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .ba-arrow {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #f4b400;
+      color: #071f42;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .ba-cta {
+      background: #f4b400;
+      padding: 95px 0;
+    }
+
+    .ba-cta-box {
+      background: #071f42;
+      border-radius: 26px;
+      padding: 65px 70px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .ba-cta-label {
+      color: #f4b400;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .ba-cta h2 {
+      color: #ffffff;
+      font-size: clamp(38px, 5vw, 58px);
+      line-height: 1.08;
+      letter-spacing: -2px;
+      margin: 0 0 20px;
+    }
+
+    .ba-cta h2 span {
+      color: #f4b400;
+    }
+
+    .ba-cta p {
+      color: #c7d3e4;
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 680px;
+      margin: 0;
+    }
+
+    .ba-cta-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-width: 245px;
+      background: #f4b400;
+      color: #071f42;
+      padding: 17px 20px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .ba-footer {
+      background: #071f42;
+      color: #ffffff;
+      padding: 70px 0 25px;
+    }
+
+    .ba-footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 0.8fr 0.8fr;
+      gap: 70px;
+      padding-bottom: 55px;
+    }
+
+    .ba-footer-logo {
+      color: #ffffff;
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+
+    .ba-footer-logo span {
+      color: #f4b400;
+    }
+
+    .ba-footer-line {
+      width: 42px;
+      height: 3px;
+      background: #f4b400;
+      margin-bottom: 20px;
+    }
+
+    .ba-footer p {
+      color: #b9c9dd;
+      font-size: 14px;
+      line-height: 1.8;
+      max-width: 440px;
+      margin: 0 0 15px;
+    }
+
+    .ba-footer-tagline {
+      color: #f4b400 !important;
+      font-size: 13px !important;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+
+    .ba-footer h4 {
+      color: #ffffff;
+      font-size: 14px;
+      margin: 4px 0 22px;
+    }
+
+    .ba-footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .ba-footer li {
+      margin-bottom: 13px;
+    }
+
+    .ba-footer a {
+      color: #b9c9dd;
+      font-size: 14px;
+    }
+
+    .ba-footer-location {
+      color: #7f94b0;
+      font-size: 12px;
+      margin-top: 25px;
+    }
+
+    .ba-footer-bottom {
+      height: 1px;
+      background: rgba(255,255,255,0.12);
+      margin-bottom: 22px;
+    }
+
+    .ba-footer-copy {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      color: #8fa4bf;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 850px) {
+
+      .ba-hero {
+        padding: 70px 0 80px;
+      }
+
+      .ba-hero-grid,
+      .ba-intro-grid,
+      .ba-dark-grid,
+      .ba-cta-box {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .ba-service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ba-principles {
+        grid-template-columns: 1fr;
+      }
+
+      .ba-markets {
+        grid-template-columns: 1fr;
+      }
+
+      .ba-arrow {
+        margin: 0 auto;
+        transform: rotate(90deg);
+      }
+
+      .ba-cta-box {
+        padding: 45px 28px;
+      }
+
+      .ba-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .ba-footer-copy {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .ba-nav-link {
+        display: none;
+      }
+
+      .ba-hero h1 {
+        letter-spacing: -1.5px;
+      }
+
+      .ba-hero-card {
+        padding: 25px;
+      }
+
+      .ba-intro,
+      .ba-corridor {
+        padding: 75px 0;
+      }
+
+      .ba-services {
+        padding-bottom: 75px;
+      }
+
+      .ba-dark {
+        padding: 75px 0;
+      }
+
+      .ba-cta {
+        padding: 70px 0;
+      }
+
+      .ba-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .ba-btn-primary,
+      .ba-btn-secondary {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="ba-header">
+    <div class="ba-container">
+      <div class="ba-nav">
+
+        <a href="/bizgarden-india/" class="ba-logo">
+          Bizgarden<span>®</span>
+        </a>
+
+        <a href="/bizgarden-india/#services" class="ba-nav-link">
+          All Services
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+
+  <section class="ba-hero">
+    <div class="ba-container">
+
+      <div class="ba-hero-grid">
+
+        <div>
+
+          <div class="ba-kicker">
+            Bizgarden® · Business Advisory &amp; Solutions
+          </div>
+
+          <h1>
+            Turn business
+            <span>challenges into direction.</span>
+          </h1>
+
+          <p class="ba-hero-text">
+            Practical business advisory and corporate solutions designed to help businesses make informed decisions, strengthen operations and move confidently into their next stage of growth.
+          </p>
+
+          <div class="ba-buttons">
+
+            <a href="#contact" class="ba-btn-primary">
+              Discuss Your Business <span>↗</span>
+            </a>
+
+            <a href="#services" class="ba-btn-secondary">
+              Explore Solutions <span>↓</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="ba-hero-card">
+
+          <div class="ba-card-label">
+            One Connected Platform
+          </div>
+
+          <h3>
+            Practical support for the decisions behind your business.
+          </h3>
+
+          <div class="ba-check">
+            <span class="ba-check-icon">01</span>
+            <span>Understand the business challenge and identify priorities</span>
+          </div>
+
+          <div class="ba-check">
+            <span class="ba-check-icon">02</span>
+            <span>Evaluate practical options and possible solutions</span>
+          </div>
+
+          <div class="ba-check">
+            <span class="ba-check-icon">03</span>
+            <span>Coordinate the professional requirements involved</span>
+          </div>
+
+          <div class="ba-check">
+            <span class="ba-check-icon">04</span>
+            <span>Support implementation and the next stage of growth</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ba-intro">
+    <div class="ba-container">
+
+      <div class="ba-intro-grid">
+
+        <div>
+
+          <div class="ba-section-kicker">
+            BUSINESS ADVISORY
+          </div>
+
+          <h2>
+            Good decisions need
+            <span>the right perspective.</span>
+          </h2>
+
+        </div>
+
+        <div class="ba-intro-text">
+
+          <p>
+            Businesses often face decisions that sit between strategy, legal requirements, finance, operations and growth.
+          </p>
+
+          <p>
+            Bizgarden® brings these connected areas together to help business owners and companies look at important decisions from a practical and commercial perspective.
+          </p>
+
+          <p>
+            Our advisory approach is focused on clarity, coordination and practical execution rather than unnecessary complexity.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ba-services" id="services">
+    <div class="ba-container">
+
+      <div class="ba-services-heading">
+
+        <div class="ba-section-kicker">
+          BUSINESS SOLUTIONS
+        </div>
+
+        <h2>
+          Solutions built around your business.
+        </h2>
+
+        <p>
+          Different businesses require different forms of support. Our solutions are designed to address the practical decisions and challenges that arise as a business develops.
+        </p>
+
+      </div>
+
+
+      <div class="ba-service-grid">
+
+        <div class="ba-service-card">
+          <div class="ba-number">01</div>
+          <h3>Business Planning</h3>
+          <p>
+            Structure business objectives, priorities and practical next steps around a clear direction.
+          </p>
+        </div>
+
+        <div class="ba-service-card">
+          <div class="ba-number">02</div>
+          <h3>Corporate Advisory</h3>
+          <p>
+            Practical guidance for corporate decisions, structures and business requirements as the organisation evolves.
+          </p>
+        </div>
+
+        <div class="ba-service-card">
+          <div class="ba-number">03</div>
+          <h3>Market Expansion</h3>
+          <p>
+            Evaluate opportunities and requirements when entering new markets or developing an existing business presence.
+          </p>
+        </div>
+
+        <div class="ba-service-card">
+          <div class="ba-number">04</div>
+          <h3>Business Structuring</h3>
+          <p>
+            Consider the legal, financial and operational elements that support an effective business structure.
+          </p>
+        </div>
+
+        <div class="ba-service-card">
+          <div class="ba-number">05</div>
+          <h3>Operational Solutions</h3>
+          <p>
+            Identify practical improvements and coordinate professional support around important operational requirements.
+          </p>
+        </div>
+
+        <div class="ba-service-card">
+          <div class="ba-number">06</div>
+          <h3>Growth Support</h3>
+          <p>
+            Support businesses as they move through new opportunities, changing requirements and further stages of development.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ba-dark">
+    <div class="ba-container">
+
+      <div class="ba-dark-grid">
+
+        <div>
+
+          <div class="ba-section-kicker">
+            OUR APPROACH
+          </div>
+
+          <h2>
+            Clear thinking.
+            <span>Practical action.</span>
+          </h2>
+
+          <p class="ba-dark-text">
+            Advisory should help a business move forward. Bizgarden® focuses on understanding the situation, identifying practical options and connecting the right professional support to the decision.
+          </p>
+
+        </div>
+
+
+        <div class="ba-principles">
+
+          <div class="ba-principle">
+            <strong>01</strong>
+            <h3>Understand</h3>
+            <p>
+              Understand the business, objective, challenge and market context.
+            </p>
+          </div>
+
+          <div class="ba-principle">
+            <strong>02</strong>
+            <h3>Assess</h3>
+            <p>
+              Consider the available options and the requirements involved.
+            </p>
+          </div>
+
+          <div class="ba-principle">
+            <strong>03</strong>
+            <h3>Plan</h3>
+            <p>
+              Develop a practical direction around priorities and next steps.
+            </p>
+          </div>
+
+          <div class="ba-principle">
+            <strong>04</strong>
+            <h3>Execute</h3>
+            <p>
+              Coordinate the support required to move from decision to action.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ba-corridor">
+    <div class="ba-container">
+
+      <div class="ba-corridor-heading">
+
+        <div class="ba-section-kicker">
+          INDIA ↔ GCC
+        </div>
+
+        <h2>
+          Business decisions across
+          <span>markets.</span>
+        </h2>
+
+        <p>
+          Bizgarden® helps businesses and entrepreneurs consider opportunities across India and the GCC with a cross-border perspective and connected professional support.
+        </p>
+
+      </div>
+
+
+      <div class="ba-markets">
+
+        <div class="ba-market">
+          <div class="ba-market-label">
+            Business Base
+          </div>
+          <h3>India</h3>
+        </div>
+
+        <div class="ba-arrow">
+          ↔
+        </div>
+
+        <div class="ba-market">
+          <div class="ba-market-label">
+            Growth Market
+          </div>
+          <h3>GCC</h3>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="ba-cta" id="contact">
+    <div class="ba-container">
+
+      <div class="ba-cta-box">
+
+        <div>
+
+          <div class="ba-cta-label">
+            Let's Talk Business
+          </div>
+
+          <h2>
+            Have a business
+            <span>challenge?</span>
+          </h2>
+
+          <p>
+            Tell us what you are working on, what you are trying to achieve or where you see an opportunity. We can help you identify the right next step.
+          </p>
+
+        </div>
+
+        <div>
+
+          <a
+            href="mailto:info@bizgarden.in?subject=Business%20Advisory%20Enquiry"
+            class="ba-cta-button"
+          >
+            <span>Discuss Your Business</span>
+            <span>↗</span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="ba-footer">
+    <div class="ba-container">
+
+      <div class="ba-footer-grid">
+
+        <div>
+
+          <div class="ba-footer-logo">
+            Bizgarden<span>®</span>
+          </div>
+
+          <div class="ba-footer-line"></div>
+
+          <p>
+            Corporate Legal &amp; Business Solutions helping businesses establish, manage and expand across India and the GCC.
+          </p>
+
+          <p class="ba-footer-tagline">
+            GROW BEYOND BORDERS.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4>Explore</h4>
+
+          <ul>
+            <li><a href="/bizgarden-india/#about">About</a></li>
+            <li><a href="/bizgarden-india/#services">Services</a></li>
+            <li><a href="/bizgarden-india/#corridor">India &amp; GCC</a></li>
+            <li><a href="/bizgarden-india/#process">How We Work</a></li>
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h4>Connect</h4>
+
+          <ul>
+            <li><a href="mailto:info@bizgarden.in">info@bizgarden.in</a></li>
+            <li><a href="/bizgarden-india/#contact">Consultation</a></li>
+          </ul>
+
+          <div class="ba-footer-location">
+            India · Bahrain · GCC
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="ba-footer-bottom"></div>
+
+
+      <div class="ba-footer-copy">
+
+        <div>
+          © 2026 Bizgarden<span style="color:#f4b400;">®</span>. All rights reserved.
+        </div>
+
+        <div>
+          India · Bahrain · GCC
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
